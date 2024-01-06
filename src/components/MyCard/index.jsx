@@ -49,7 +49,7 @@ export default function MyCard({ id, Data }) {
 						<ul className={ MyCardStyle.blocTag }>
 							{ Data.Resume.projects[id].keywords.map(tag => 
 							<li key={ new Date().getTime() + tag } >
-								<img alt="compétence" src={ "/flourdau/img/Body/SVG/" + tag + ".svg"}/>
+								<img alt="compétence" src={ "/img/Body/SVG/" + tag + ".svg"}/>
 							</li>
 							) }
 						</ul>
@@ -65,7 +65,7 @@ export default function MyCard({ id, Data }) {
 							<span>Production</span>
 						</a>
 						<a target="_blank" rel="noreferrer" href={ Data.Resume.projects[id].depot}>
-							<img alt="" src="/flourdau/img/Body/SVG/GitHubAPI.svg"/>
+							<img alt="" src="/img/Body/SVG/GitHubAPI.svg"/>
 							<span>GitHub</span>
 						</a>
 					</div>
