@@ -23,12 +23,12 @@ export default function UniToggle({Location}) {
 			video.style.display = 'none'
 			QRCode.style.display = 'none'
 			carteID.style.filter = 'grayscale(0)'
-			carteID.style.background = "url('https://github.com/flourdau/flourdau/raw/main/public/img/velociraptor.webp')"
+			carteID.style.background = "url('https://github.com/flourdau/flourdau.github.io/raw/main/public/img/velociraptor.webp')"
 			carteID.style.background += "right 0 top 0 no-repeat"
 			carteID.style.backgroundColor = "white"
 
 			document.body.style.transition = "2s"
-			document.body.style.background = "url('https://github.com/flourdau/flourdau/raw/main/public/img/arcenciel.webp')"
+			document.body.style.background = "url('https://github.com/flourdau/flourdau.github.io/raw/main/public/img/arcenciel.webp')"
 			document.body.style.background += "fixed left 0 top 0 no-repeat"
 			document.body.style.backgroundSize = "cover"
 
