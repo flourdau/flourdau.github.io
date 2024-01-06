@@ -1,0 +1,132 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Design System */
+html {
+	/* Colors */
+	--myLight:rgb(248, 249, 250);
+	--myDark:rgb(33, 37, 41);
+	--mysuccess:#198754;
+	--myDanger:#dc3545;
+	--myTrans:transparent;
+	--lightPink:#EDD6D9;
+	--pink:#FF4FA6;
+	--violet:#8997F5;
+	--vert1:#297c66;
+	--vert2:#00DB66;
+	--vert3:#16d6a3;
+	--yellow:#F5EC68;
+
+	/* Text configuration */
+	--font1:'Open Sans';
+	--font2:'Space Mono';
+
+	--font-weight:400;
+	--highlight-font-weight:600;
+
+	--font-size:1rem;
+	--highlight-font-size:1.9rem;
+	--title-font-size:3rem;
+
+	--line-height:1rem;
+	--highlight-line-height:1.5rem;
+	--title-line-height:3rem;
+
+	height:100%
+}
+
+* {
+	margin:0;
+	padding:0;
+	font-family:'Open Sans', sans-serif
+}
+
+.myViolet { color:var(--violet) !important }
+
+body {
+	background-size:cover;
+	font-family:var(--font1);
+	font-style:normal;
+	font-weight:var(--font-weight);
+	font-size:var(--font-size);
+	line-height:var(--line-height);
+	height:100%;
+	color:var(--black);
+	display: flex;
+	align-items:flex-end;
+	justify-content:center
+}
+
+#root {
+	height:100%;
+	width:100%;
+	justify-content:center;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:space-between
+}
+
+a {
+    text-decoration:none !important;
+    color:var(--vert1) !important
+}
+a:hover { color:var(--violet) !important }
+a:visited { color:var(--violet) !important }
+
+h1 {
+	font-family:var(--font2);
+	text-transform:uppercase;
+	text-align:center;
+	text-shadow:var(--vert3) 1px 0 10px;
+	vertical-align:middle;
+	color:var(--vert1) !important;
+    font-weight:bold !important;
+	font-size:var(--title-line-height) !important
+}
+
+hr {
+	border-color: var(--vert1) !important;
+	width:80%;
+	height:1rem;
+	margin:0 10% !important
+}
+
+.material-icons {
+    vertical-align:middle;
+    font-weight:bold !important
+}
+
+video {
+	width:100%;
+	position:fixed;
+	bottom:0;
+	z-index:-50
+}
+
+#collapse_2 {display:none}
+
+/*
+	MULTICOLOR */
+.rainbow_text_animated {
+	background:linear-gradient(to right, 
+		var(--pink),
+		var(--violet),
+		var(--vert3),
+		var(--yellow),
+		var(--pink),
+		var(--violet),
+		var(--vert3),
+		var(--yellow)
+	);
+	-webkit-background-clip:text !important;
+	background-clip:text !important;
+	color:transparent !important;
+	animation:rainbow_animation 8s ease-in-out infinite !important;
+	background-size:800% 100%
+}
+@keyframes rainbow_animation {
+	
+	0%, 100% { background-position:0 0 }
+	50% { background-position:100% 0 }
+	
+}

@@ -1,0 +1,14 @@
+.accordion,
+.accordion div { width:100% }
+
+.accordion a { text-align:center }
+
+.accordion button {
+	padding:0 !important;
+	border-radius:1rem !important;
+	background-color:var(--myLight) !important
+}
+
+.accordion button:not(.collapsed) { background-color:var(--myTrans) !important }
+
+.accordion>div { background-color:transparent !important }

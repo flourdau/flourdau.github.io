@@ -1,0 +1,74 @@
+.skills hr { 
+	width:100%;
+	margin-bottom:1rem
+}
+
+/*
+SKILL */
+.skill {
+	margin:1rem 2rem;
+	width:35px
+}
+
+
+/*
+SOFTSKILL */
+.softSkills {
+	margin:3rem 0;
+	width:100%;
+	text-align:center;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center
+}
+
+.softSkills img { 
+	width:70px;
+	height:70px;
+	margin:0 2rem;
+	opacity:.5
+}
+
+.softSkills p { font-weight:bold }
+
+.skills>ul,
+.skills {
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-items:center
+	
+}
+
+.skills h3 {
+	font-size:1.25rem;
+	color:var(--vert1);
+	font-weight:bold;
+	padding:.5rem 0 0 .5rem;
+	width:100%
+}
+
+.skills>ul:first-child { display:none }
+.softSkills, .skills>ul {
+	list-style:none
+}
+
+.softSkills p, .skills p { text-align:center }
+
+.skills>ul:last-child p { 
+	text-align:left;
+	margin:0 2rem 1rem 2rem 
+}
+
+.skills>ul {
+	width:100%;
+	background-color:#FFF;
+    box-shadow:10px 10px 5px #888;
+    border:0.5px solid #444;
+	border-radius:1rem;
+	margin:1.75rem .25rem;
+	padding:.25rem
+}
+
+.skills>ul { max-width:380px }

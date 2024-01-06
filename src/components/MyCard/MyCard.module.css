@@ -1,0 +1,123 @@
+.blocInfo {
+	width:100%;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center
+}
+
+.blocInfo ul { list-style:none }
+
+.coverProduct {
+	flex:2;
+	width:100%;
+	max-width:575px
+}
+
+.blocTitle, .blocTag {width:100%}
+.blocInfo {width:100%}
+.blocCollapse {flex:1}
+
+.blocCollapse>div,
+.blocCollapse>ul {margin:0 0 1rem 0}
+
+.blocTag,
+.blocTitle {
+	padding:1rem;
+	border-radius:1rem;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:flex-start;
+	gap:1rem
+}
+
+
+.description,
+.competences {
+	display:flex;
+	flex-flow:column nowrap
+}
+
+.blocTag {
+	text-align:center;
+	align-items:flex-end;
+	background-color:var(--myLight) !important
+}
+
+.blocTag img {width:64px}
+
+.blocLinks {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:flex-end;
+	gap:2rem;
+	width:100%
+}
+
+.coverProduct {
+	flex:2;
+	width:100%;
+	max-width:575px
+}
+
+.blocInfo .accordion-body {
+	display:flex;
+	flex-flow:column
+}
+
+.gridPortraits {
+	display:grid;
+	gap:15px
+}
+
+.gridPortraits img {
+	width:min-content;
+	height:min-content;
+	max-width:100%;
+	object-fit:cover
+}
+
+.lienConteneurPhoto { position:relative }
+
+.photoHover {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:1.5em;
+	color:white;
+	background-color:rgba(0, 0, 0, 0.7);
+	display:none
+}
+
+.lienConteneurPhoto:hover .photoHover {display:flex}
+
+.cardImgOverlay {
+	display:flex;
+	flex-flow:column;
+	justify-content:flex-end
+}
+
+@media screen and (max-width: 996px) {
+
+	.gridPortraits {
+		grid-template-columns:1fr;
+		gap:15px
+	}
+
+}
+
+@media all and (max-width:750px) {
+
+	.cardImg {
+		width:330px !important;
+		height:200px !important
+	}
+
+}

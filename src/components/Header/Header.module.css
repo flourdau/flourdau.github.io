@@ -1,0 +1,142 @@
+/*
+HEADER */
+.myHeader {
+    padding:4% 4% 0% 4%;
+    margin:0 0 2rem 0;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-evenly
+}
+
+.myHeader h2, .myHeader h3 {
+    vertical-align:middle;
+	text-align:center;
+	font-size:1.25rem !important;
+	font-style:italic !important;
+    font-weight:bold !important
+}
+
+.myHeader>strong h2 {
+    font-size:2rem !important;
+    font-style:normal!important
+}
+
+.myHeader>strong {
+    background-image:linear-gradient(to bottom,
+	rgba(255,255,255,0.05) 0%,
+	rgba(255,255,255,0.93) 15%,
+	rgba(255,255,255,0.93) 75%,
+	rgba(255,255,255,1) 100%);
+    opacity:.7;
+    z-index:1;
+    display:flex;
+    flex-flow:column;
+	align-items:center;
+	max-width:950px;
+    margin:0 0 0 2%;
+	padding:0 .5rem;
+    border-radius:1rem
+}
+
+
+/*
+BLOCKS ID*/
+.myHeader>address {
+    z-index:1;width:480px;
+    height:320px;
+    padding:.5%;
+	transition:2s;
+    display:flex;
+    flex-direction:column;
+	align-items:flex-start;
+    background-color:white;
+    background:url("https://github.com/flourdau/flourdau/raw/main/IMG/flourdau.webp") no-repeat top 0 left 0;
+    background-size:cover;
+    filter:grayscale(.995);
+    border:0.5px solid #444;
+    border-radius:1rem;
+    box-shadow:10px 10px 5px #888
+}
+.myHeader>address:hover { filter:grayscale(0) }
+
+.myHeader>address h3 {
+    background-image:linear-gradient(to right ,
+        rgba(0,0,0,0) 3%,
+        rgba(255,255,255,.5)90%,
+        rgba(0,0,0,0) 97%);
+    color:black;
+    font-size:1.25rem;
+    font-style:italic
+}
+
+.myHeader>address>h3:first-child>a { font-size:1.75rem }
+.myHeader>address>h3:nth-child(2)>a { font-size:.9rem }
+
+.myEmail a { color:var(--pink) !important }
+
+.myHeader ul { margin:.25rem 0 0 1.5rem }
+
+.myHeader p {
+	vertical-align:middle;
+	margin:0 0 0 8%
+}
+
+.icone {
+	font-size:1.25rem !important;
+	font-style:normal !important
+}
+
+
+/*
+QR CODE  */
+.myHeader>address>img {
+    transition:2s;
+    display:block;
+    width:130px;
+    height:130px;
+    cursor:none;
+    margin:auto auto auto 2rem
+}
+
+.myHeader>address>img:hover { 
+    margin:auto auto auto .5rem;
+    width:150px;
+    height:150px
+}
+
+.blocBtnHeader {
+	width:100%;
+    margin:0 0 2rem 0;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-evenly
+}
+
+@media (min-width:1200px) {
+
+	.myHeader h2 {
+        font-size:1.5rem !important;
+        padding:2rem 0 !important
+    }
+
+}
+
+
+@media (max-width:1200px) {
+
+	.myHeader h2 {
+		font-size:1.1rem !important;
+        padding:.75rem 0 !important
+    }
+
+}
+
+@media all and (max-width:750px) {
+
+	.myHeader>address { zoom:80% }
+
+    .myHeader>strong h2 { font-size:1.25rem !important }
+
+}

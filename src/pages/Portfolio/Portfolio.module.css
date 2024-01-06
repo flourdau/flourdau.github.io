@@ -1,0 +1,116 @@
+.homeContainer {
+	display:flex;
+	flex-flow:column;
+	align-items:center
+}
+
+.homeContainer h2, .homeContainer h3 {
+	font-family:var(--font2);
+	color:var(--vert3)
+}
+
+.homeContainer ul {
+	width:100%;
+	justify-content:center;
+	align-items:center
+}
+
+.homeContainer>ul:first-child {
+	margin:16rem 0
+}
+
+.blocCol {
+	width:100%;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center;
+	text-align:center
+}
+
+.blocCol ul {
+	list-style:none;
+	justify-content:center
+}
+
+.blocCol>a {
+	margin:0;
+	padding:0;
+	width:100%
+}
+
+.blocCol h3 {
+	width:100%;
+	margin:14rem 0 2rem 0;
+	text-align:center;
+	font-style:normal;
+	font-weight:var(--font-weight);
+	font-size:var(--highlight-font-size);
+	line-height:var(--line-height)
+}
+
+.blocMain>div { background-color:rgba(255,255,255, .8) }
+
+.blocMain p {
+	min-width:320px;
+	animation:rainbow_text_animated;
+	animation-duration:2s;
+	padding:0 10rem
+}
+
+.blocMain p, .blocMain p a, .blocMain li {
+	font-style:italic !important;
+	font-weight:var(--hightline-font-weight);
+	font-size:var(--highlight-font-size);
+	line-height:var(--highlight-line-height) + 0.5rem
+}
+
+.blocMain p, .blocMain li, .blocMain p strong, .blocMain p a { font-family:var(--font1) }
+
+.projectsList {
+	display:flex;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:space-evenly;
+	gap:2rem
+}
+
+.projectsList img {
+	margin:0;
+	padding:0;
+	width:100%;
+	width:640px;
+	height:370px
+}
+
+@media all and (max-width:1024px) {
+
+	.blocMain p, .blocMain p a, .blocMain li {
+		padding:0 1rem;
+		font-weight:var(--font-weight);
+		font-size:1rem;
+		line-height:var(--line-height) + 0.5rem
+	}
+
+}
+
+@media all and (max-width:750px) {
+
+	.blocCol p {
+		padding:0 1rem;
+		font-size:calc(var(--highlight-font-size) - .85rem)
+	}
+
+	.projectsList img {
+		margin:0;
+		padding:0;
+		width:100%;
+		max-width:340px;
+		height:230px
+	}
+
+	.blocMain{padding:0 1rem}
+	.blocMain p, .blocMain p a, .blocMain li { font-size:1.25rem }
+	.projectsList { padding:2rem 0 0 0 }
+
+}

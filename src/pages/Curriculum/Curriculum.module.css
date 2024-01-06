@@ -1,0 +1,116 @@
+/*
+MAIN */
+.myMain {
+	padding:2%;
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	align-items:flex-start;
+	justify-content:space-evenly
+}
+
+.myMain h2, .myMain h3, .myMain h4 {
+	text-align:left;
+	font-style:normal;
+    vertical-align:middle;
+    font-weight:bold !important
+}
+
+.myMain>section {
+	max-width:700px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:flex-start;
+	align-items:flex-start
+}
+
+.myMain h2 {
+	margin:1rem 0 !important;
+	font-size:1.7rem !important
+}
+
+.myMain h3 { font-size:1.5rem !important }
+.myMain h4 { font-size:1.4rem !important }
+
+.myMain h5 { width:100% }
+
+.myMain>section hr { 
+	width:100%;
+	margin:0 6% 0 0
+}
+
+.myMain>section:nth-child(4) {
+	display:flex;
+	flex-flow:column nowrap
+}
+
+.myMain section>div,
+.myMain section>div>div { width:100% }
+
+
+/*
+FORMATION */
+.educations>div { 
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-around
+}
+
+.educations>div a { 
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:flex-start
+}
+
+.educations ul>li:first-child { 
+	text-decoration:underline;
+	font-weight:bold
+}
+
+.educations ul, .xp ul {
+	margin:0 0 4rem 0;
+	background-color:var(--myLight);
+	border-radius:1rem
+}
+
+
+/*
+PROJECTS */
+.proProjects h3>button {
+	color:var(--vert1);
+	font-weight:bold;
+	font-size:1.5rem !important
+}
+
+.proProjects h3,
+.proProjects hr { margin:1rem 0 }
+
+.proProjects p { max-width:600px }
+
+.proProjects a {
+	text-align:right;
+	color:var(--pink) !important
+ }
+
+ .proProjects div>a {
+	padding:0 2rem 0 0;
+	display:block;
+	width:100%;
+	align-self:flex-end
+ }
+
+.skillProject {
+	margin:0 .5rem;
+	width:20px
+}
+
+
+/*
+ INTEREST */
+ .interest, .interest>ul {
+	display:flex;
+	list-style:none;
+	padding:0
+}
+
+.interest h6 { font-weight:bold }
