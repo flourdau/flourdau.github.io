@@ -68,10 +68,10 @@ export default function UniToggle({Location}) {
 			const h1 = document.querySelector("h1")
 			h1.classList.toggle("rainbow_text_animated")
 
-			const collapse0 = document.querySelector("#collapse_0 p")
+			const collapse0 = document.querySelector("#collapse_0")
 			collapse0.classList.toggle("rainbow_text_animated")
 
-			const collapse1 = document.querySelector("#collapse_1 p")
+			const collapse1 = document.querySelector("#collapse_1")
 			collapse1.classList.toggle("rainbow_text_animated")
 
 		}
