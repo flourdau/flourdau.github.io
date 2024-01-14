@@ -9,9 +9,9 @@ export default function Portfolio({ Data }) {
 	return (
 	<section className={ PortfolioStyle.homeContainer }>
 
-		<SocialNetwork Data={ Data.Resume } />
-
 		<section className={ PortfolioStyle.blocCol }>
+
+			<SocialNetwork Data={ Data.Resume } />
 
 			<div className={ PortfolioStyle.blocMain } >
 
