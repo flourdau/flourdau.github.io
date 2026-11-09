@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactMarkdown from 'react-markdown'
 
 import SocialNetwork from '../SocialNetwork'
@@ -8,17 +7,17 @@ import HeaderStyle from './Header.module.css'
 import ButtonStyle from '../Layout/Button.module.css'
 
 export default function Header({ Data, Location }) {
-
+	const currentPath = Location.pathname.replace(/\/+$/, '') || '/'
 
 	let title = Data.Resume.basics.name
-	let message = Data.GitHubProfile.bio
+	let message = Data.GitHubProfile?.bio || Data.Resume?.meta?.content
 	// let message = '💻 Développeur Web FullStack, #OPENTOWORK, passionné par le numérique... 🎮📱🎧🌍🪐🦄🌈💗'
 
-	if (Location.pathname === "/curriculum") {
+	if (currentPath === "/curriculum") {
 		title = Data.Resume.basics.label
 		message = Data.Resume.basics.summary
 	}
-	else if (Location.pathname === "/portfolio") {
+	else if (currentPath === "/portfolio") {
 		title = Data.Resume.basics.name
 	}
 
@@ -29,7 +28,7 @@ export default function Header({ Data, Location }) {
 		{   /* INFORMATIONS PERSONNELLES */ }
 		<address>
 
-		{ Location.pathname === '/curriculum' &&
+		{ currentPath === '/curriculum' &&
 		<>
 
 			<h3>
@@ -54,12 +53,12 @@ export default function Header({ Data, Location }) {
 
 		</>}
 
-		{ Location.pathname === '/curriculum' &&
+		{ currentPath === '/curriculum' &&
 		<>
 			<SocialNetwork className={ HeaderStyle.social } Data={ Data.Resume }/>
 		</>}
 
-			<img src={"https://github.com/flourdau/flourdau/raw/main/IMG/QRCodeCV.webp" } alt="QR-Code vers mon Curriculum"/>
+			<img src="/IMG/QRCodeCV.webp" alt="QR-Code vers mon Curriculum"/>
 
 		</address>
 
@@ -68,16 +67,16 @@ export default function Header({ Data, Location }) {
 
 			<h1>{ title }</h1>
 
-			{ Location.pathname === '/curriculum' ?
-			<ReactMarkdown children={ message }/> :
+			{ currentPath === '/curriculum' ?
+			<ReactMarkdown>{ message }</ReactMarkdown> :
 			<h2>{ message }</h2>
 			}
-			{ Location.pathname === '/curriculum' &&
+			{ currentPath === '/curriculum' &&
 			<div className={ HeaderStyle.blocBtnHeader }>
 
 				<Skills Data={ Data }/>
 
-				<a className={ ButtonStyle.button } href="https://raw.githubusercontent.com/flourdau/flourdau/main/flourdau.pdf">
+				<a className={ ButtonStyle.button } href="/flourdau.pdf" target="_blank" rel="noreferrer">
 
 					<span className={ ButtonStyle.button__text }>Version-PDF</span>
 					<span className={ ButtonStyle.button__icon }>
@@ -92,7 +91,7 @@ export default function Header({ Data, Location }) {
 
 			</div>}
 
-			{ Location.pathname === '/portfolio' &&
+			{ currentPath === '/portfolio' &&
 			<div className={ HeaderStyle.blocBtnHeader }>
 
 				<Skills Data={ Data }/>

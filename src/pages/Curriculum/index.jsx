@@ -114,7 +114,7 @@ export default function Curriculum({ Data }) {
 								title={ elem.name }
 								content={
 							<div key={ new Date().getTime() + i + "line" }>
-								<p><ReactMarkdown children={ elem.description } /></p>
+								<div><ReactMarkdown>{ elem.description }</ReactMarkdown></div>
 								{ elem.url && <a target='_blank' rel="noreferrer" title='Démonstrastion' href={ elem.url }>Démo</a>}
 								<hr></hr>
 							{ elem.keywords.map((e) => (
@@ -171,7 +171,7 @@ export default function Curriculum({ Data }) {
 						title={
 						<h2>
 							<i className="material-icons">&#xe338;</i>
-							<span>&nbsp;CENTRES D'INTÉRÊTS</span>
+							<span>&nbsp;CENTRES D&apos;INTÉRÊTS</span>
 						</h2>
 						}
 						index={ false }

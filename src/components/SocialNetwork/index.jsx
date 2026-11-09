@@ -8,7 +8,7 @@ export default function SocialNetwork({ Data }) {
 
 	{ Data.basics.profiles.map(({network, url }) => (
 
-		<li key={ new Date().getTime() + url }>
+		<li key={ network }>
 			<a target="_blank" rel="noreferrer" title={ network } href={ url }>
 				<img src={ "/img/Body/SVG/" + network + ".svg"} alt={ network } />
 			</a>

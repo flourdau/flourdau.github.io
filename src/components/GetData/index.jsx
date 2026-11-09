@@ -1,44 +1,52 @@
-// import urlGitResume from '../../flourdau.resume.json'
-
 const urlGitResume = 'https://raw.githubusercontent.com/flourdau/flourdau/main/flourdau.resume.json'
 const urlGitReadMe = 'https://raw.githubusercontent.com/flourdau/flourdau/main/README.md'
 const urlGitProfile = 'https://api.github.com/users/flourdau'
 
-async function GitHubContents(url) {
-	try { return await fetch(url) }
-	catch (error) { console.error(error) }
+const fallbackGitHubProfile = {
+	login: 'flourdau',
+	name: 'Florian Lourdaux',
+	bio: '💻 Développeur Web FullStack, #OPENTOWORK, passionné par le numérique... 🎮📱🎧🌍🪐🦄🌈💗'
+}
+
+async function fetchWithFallback(primaryUrl, fallbackUrl, asJson = true, fallbackValue = null) {
+	const isLocalDev = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+	const urls = isLocalDev && fallbackUrl ? [fallbackUrl, primaryUrl] : [primaryUrl, fallbackUrl].filter(Boolean)
+
+	for (const url of urls) {
+		try {
+			const response = await fetch(url)
+			if (response.ok) {
+				return asJson ? await response.json() : await response.text()
+			}
+		} catch (error) {
+			console.warn(`Fallback triggered for ${url}:`, error)
+		}
+	}
+
+	return fallbackValue
 }
 
 /*
 Get Data */
-
-// DEV MOD
-// let Resume = {}
-// Resume.Resume = urlGitResume
-
-
-// PROD MOD
-let Resume = {'Resume': await GitHubContents(urlGitResume)}
-Resume.Resume = await Resume.Resume.json()
-
-let githubReadMe = await GitHubContents(urlGitReadMe)
-githubReadMe = await githubReadMe.text()
-
-let githubProfile = {'GitHubProfile': await GitHubContents(urlGitProfile)}
-githubProfile.GitHubProfile = await githubProfile.GitHubProfile.json()
-
+const resumeData = await fetchWithFallback(urlGitResume, '/flourdau.resume.json', true, {})
+const githubReadMeText = await fetchWithFallback(urlGitReadMe, '/README.md', false, '')
+const githubProfileData = await fetchWithFallback(urlGitProfile, null, true, fallbackGitHubProfile)
 
 /*
 Parsing README.md */
-githubReadMe = await githubReadMe.split('___')
-let arrayReadME = { 'arrayReadME': githubReadMe.map(githubReadMeSection => githubReadMeSection.split(':  \n', 2)) }
+const sections = githubReadMeText ? githubReadMeText.split('___') : []
+const arrayReadME = {
+	arrayReadME: sections.map((githubReadMeSection) => githubReadMeSection.split(':  \n', 2))
+}
 
 /*
 Merging Data */
 const mergedData = {
-	...Resume,
-	...githubProfile,
+	Resume: resumeData,
+	GitHubProfile: githubProfileData || fallbackGitHubProfile,
 	...arrayReadME
 }
 
-export default async function GetData() { return mergedData }
+export default async function GetData() {
+	return mergedData
+}

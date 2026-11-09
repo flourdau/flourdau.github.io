@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import Modal from 'react-bootstrap/Modal'
 
@@ -14,7 +14,7 @@ export default function Skills({ Data }) {
 
 	return (
 	<>
-		<span className={ ButtonStyle.button } size="lg" variant="light" onClick={ handleShow }>
+		<span className={ ButtonStyle.button } role="button" tabIndex={0} onClick={ handleShow }>
 			<span className={ ButtonStyle.button__only}>Compétences</span>
 		</span>
 
@@ -30,7 +30,7 @@ export default function Skills({ Data }) {
 				<ul className={ SkillsStyle.softSkills }>
 
 					{ Data.Resume.skills[0].keywords.map((e) => (
-					<li key={ new Date().getTime() + e + "skill" }>
+					<li key={ e + "skill" }>
 						<img alt="soft-skill" src={"/img/Body/SVG/" + e + ".svg"}/>
 						<p>{ e }</p>
 					</li>
@@ -41,12 +41,12 @@ export default function Skills({ Data }) {
 				<div className={ SkillsStyle.skills }>
 
 					{ Data.Resume.skills.map((elem, i) => (
-					<ul key={ new Date().getTime() + i + "line" }>
+					<ul key={ i + "line" }>
 
 					{ i > 0 && <h3>{ elem.name }</h3> }
 					{ i > 0 && <hr></hr> }
 					{ i > 0 && elem.keywords.map((e) => (
-						<li key={ new Date().getTime() + e + "skill" }>
+						<li key={ e + "skill" }>
 							{ i < Data.Resume.skills.length- 2 &&
 							<img className={ SkillsStyle.skill } alt={ e + " skill"} src={"/img/Body/SVG/" + e + ".svg"}/> }
 							<p>{ e }</p>

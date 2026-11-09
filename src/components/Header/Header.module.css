@@ -52,7 +52,7 @@ BLOCKS ID*/
     flex-direction:column;
 	align-items:flex-start;
     background-color:white;
-    background:url("https://github.com/flourdau/flourdau/raw/main/IMG/flourdau.webp") no-repeat top 0 left 0;
+    background:url("/IMG/flourdau.webp") no-repeat top 0 left 0;
     background-size:cover;
     filter:grayscale(.995);
     border:0.5px solid #444;

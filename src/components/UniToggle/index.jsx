@@ -4,6 +4,7 @@ import confetti from 'canvas-confetti'
 import './UniToggle.css'
 
 export default function UniToggle({Location}) {
+	const currentPath = Location.pathname.replace(/\/+$/, '') || '/'
 
 	const [checked, setChecked] = useState(false)
 
@@ -20,15 +21,17 @@ export default function UniToggle({Location}) {
 		
 		if (!checked) {
 
-			video.style.display = 'none'
-			QRCode.style.display = 'none'
-			carteID.style.filter = 'grayscale(0)'
-			carteID.style.background = "url('https://github.com/flourdau/flourdau.github.io/raw/main/public/img/velociraptor.webp')"
-			carteID.style.background += "right 0 top 0 no-repeat"
-			carteID.style.backgroundColor = "white"
+			if (video) video.style.display = 'none'
+			if (QRCode) QRCode.style.display = 'none'
+			if (carteID) {
+				carteID.style.filter = 'grayscale(0)'
+				carteID.style.background = "url('/img/velociraptor.webp')"
+				carteID.style.background += "right 0 top 0 no-repeat"
+				carteID.style.backgroundColor = "white"
+			}
 
 			document.body.style.transition = "2s"
-			document.body.style.background = "url('https://github.com/flourdau/flourdau.github.io/raw/main/public/img/arcenciel.webp')"
+			document.body.style.background = "url('/img/arcenciel.webp')"
 			document.body.style.background += "fixed left 0 top 0 no-repeat"
 			document.body.style.backgroundSize = "cover"
 
@@ -36,7 +39,7 @@ export default function UniToggle({Location}) {
 			myCanvas.style.width = '100%'
 			myCanvas.style.height = '100%'
 
-			carteID.prepend(myCanvas)
+			if (carteID) carteID.prepend(myCanvas)
 			
 			let myConfetti = confetti.create(myCanvas, {
 				zIndex:1000,
@@ -52,33 +55,26 @@ export default function UniToggle({Location}) {
 		}
 		else {
 
-			video.style.display = 'block'
-			QRCode.style.display = 'block'
+			if (video) video.style.display = 'block'
+			if (QRCode) QRCode.style.display = 'block'
 			document.body.style.background = "none"
 
-			carteID.style.background = "url('https://github.com/flourdau/flourdau/raw/main/IMG/flourdau.webp')"
-			carteID.style.filter = 'grayscale(.995)'
+			if (carteID) {
+				carteID.style.background = "url('/IMG/flourdau.webp')"
+				carteID.style.filter = 'grayscale(.995)'
+			}
 
-			document.querySelector('header>address>canvas').remove()
+			document.querySelector('header>address>canvas')?.remove()
 
 		}
 			
-		if (Location.pathname === '/portfolio') {
+		if (currentPath === '/portfolio') {
 
-			const h1 = document.querySelector("h1")
-			h1.classList.toggle("rainbow_text_animated")
-
-			const collapse0 = document.querySelector("#collapse_0")
-			collapse0.classList.toggle("rainbow_text_animated")
-
-			const collapse1 = document.querySelector("#collapse_1")
-			collapse1.classList.toggle("rainbow_text_animated")
-
-			const collapse2 = document.querySelector("#collapse_2")
-			collapse2.classList.toggle("rainbow_text_animated")
-
-			const collapse3 = document.querySelector("#collapse_3")
-			collapse3.classList.toggle("rainbow_text_animated")
+			document.querySelector("h1")?.classList.toggle("rainbow_text_animated")
+			document.querySelector("#collapse_0")?.classList.toggle("rainbow_text_animated")
+			document.querySelector("#collapse_1")?.classList.toggle("rainbow_text_animated")
+			document.querySelector("#collapse_2")?.classList.toggle("rainbow_text_animated")
+			document.querySelector("#collapse_3")?.classList.toggle("rainbow_text_animated")
 
 		}
 		

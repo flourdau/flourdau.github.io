@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   build: {
-    target: "esnext",
+    target: 'esnext',
+    outDir: 'docs',
+    emptyOutDir: true,
   },
-  base: "/",
-  plugins: [react()]
+  base: '/',
+  plugins: [react()],
 })

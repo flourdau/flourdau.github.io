@@ -5,6 +5,7 @@ import UniToggle from '../../components/UniToggle'
 import NavStyle from './Nav.module.css'
 
 export default function MyNav({ Data, Location }) {
+	const currentPath = Location.pathname.replace(/\/+$/, '') || '/'
 
 	return (
 
@@ -13,7 +14,7 @@ export default function MyNav({ Data, Location }) {
 		<Navbar.Toggle aria-controls="basic-navbar-nav"/>
 
 		<Navbar.Collapse id="basic-navbar-nav">
-			<Nav activeKey={Location.pathname} variant="underline">
+			<Nav activeKey={currentPath} variant="underline">
 				<section>
 					<Nav.Item>
 						<Nav.Link eventKey="/" href={ "/" }><span>Home</span></Nav.Link>
@@ -27,12 +28,12 @@ export default function MyNav({ Data, Location }) {
 						<Nav.Link eventKey="/portfolio" href={ "/portfolio" }><span>Portfolio</span></Nav.Link>
 					</Nav.Item>
 
-					{ (Location.pathname === '/' || Location.pathname === '/portfolio') && 
+					{ (currentPath === '/' || currentPath === '/portfolio') && 
 					<Nav.Item>
 						<UniToggle Location={ Location }/>
 					</Nav.Item>}
 				</section>
-				{ Location.pathname === '/portfolio' && 
+				{ currentPath === '/portfolio' && 
 				<section>
 					<Nav.Item>
 						<Nav.Link className={ NavStyle.infoSocial } href={ "mailto:" + Data.Resume.basics.email }>

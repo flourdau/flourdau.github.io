@@ -1,0 +1,586 @@
+{
+	"$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+	"basics": {
+		"name":		"Florian Lourdaux",
+		"nickname":	"Senacra Flora Van Haze",
+		"label":	"Développeur Web",
+		"image":	"flourdau.webp",
+		"email":	"lourdaux.florian.pro@gmail.com",
+		"phone":	"06-80-48-33-84",
+		"url":		"https://positive-link.net/portfolio",
+		"summary":	"## Formé à **l'[École 42](https://42.fr/)** ainsi que sur **[OpenClassrooms](https://openclassrooms.com/)**, je suis prêt à mettre en pratique mes compétences au sein d'une entreprise innovante.  Je contribuerai à la création de solutions web de qualité et participerai à son succès. Tout en relevant de nouveaux défis stimulants. ",
+		"location":	{
+			"address":	"Appartement 103, 4 rue Robert Verrier",
+			"city":		"ANICHE",
+			"postalCode":	"59580",
+			"country":	"FRANCE",
+			"countryCode":	"FR",
+			"department":	"Nord",
+			"region":	"Haut de France"
+		},
+		"profiles": [
+			{
+				"network": "GitHub",
+				"username": "flourdau",
+				"url": "https://github.com/flourdau"
+			},
+			{
+				"network": "Linkedin",
+				"username": "flourdau",
+				"url": "https://fr.linkedin.com/in/flourdau"
+			},
+			{
+				"network": "CodinGame",
+				"username": "flourdau",
+				"url": "https://www.codingame.com/profile/6468f1acd7f4253174b419ed67e9dfd8540088"
+			}
+		]
+	},
+	"work": [
+		{
+			"name": "ECP Europ Computer",
+			"position": "Développeur PHP, Intégrateur Web",
+			"url": "http://www.europ-computer.com/",
+			"startDate": "2017-11-01",
+			"endDate": "2018-11-01",
+			"summary": "Description…",
+			"highlights": [
+				"Création d'outils en PHP : mailing, référencements, achats automatisés.",
+				"Gestion des sites internet et bases de données. (PHP, MYSQL, ORACLE)",
+				"Maintenance du parc informatique : +25 machines, 2 serveurs (1 local + 1 distant)."
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "Simplon Hauts de France (DISTANCIEL)",
+			"url": "https://www.simplon.co/reseaux-cybersecurite/parcours-guide-cyber-de-la-gouvernance-a-la-reponse-aux-incidents",
+			"area": "IBM x Simplon : Guided Learning Experience Cyber 10 semaines",
+			"startDate": "2026-10-01",
+			"endDate": "2026-12-21",
+			"courses": [
+				"Gouvernance, gestion des risques et conformité",
+				"Détection des menaces, analyse de vulnérabilités",
+				"Processus de réponse aux incidents, investigation numérique",
+				"Principes fondamentaux de la sécurité numérique (triade CIA : Confidentialité, Intégrité, Disponibilité)",
+				"Sécurisation des réseaux, protocoles de chiffrement et gestion des identités/accès",
+				"Sensibilisation aux vecteurs d'attaque courants (phishing, malwares, ingénierie sociale)",
+				"Acquérir les bonnes pratiques d'hygiène informatique et de défense périmétrique"
+			]
+		},
+		{
+			"institution": "Simplon Hauts de France (DISTANCIEL)",
+			"url": "https://www.simplon.co/data-ia/parcours-guide-ia-data-ia-generative",
+			"area": "IBM x Simplon : Guided Learning Experience IA 10 semaines",
+			"startDate": "2026-05-01",
+			"endDate": "2026-08-01",
+			"courses": [
+				"Compréhension des concepts clés de l'IA (Machine Learning, Deep Learning, IA générative...).",
+				"Utilisation des outils et frameworks pour concevoir et déployer des solutions intelligentes.",
+				"Application concrète de l'IA dans le développement d'applications modernes.",
+				"Enjeux éthiques"
+			]
+		},
+		{
+			"institution": "Simplon LILLE",
+			"url": "https://www.simplon.co/developpement/apple-foundation-program",
+			"area": "Apple Foundation Program & Extended",
+			"startDate": "2025-09-01",
+			"endDate": "2025-11-01",
+			"courses": [
+				"Immersion intensive dans l'écosystème Apple pour développer des applications mobiles iOS.",
+				"Initiation & perfectionnement au développement natif iOS (Swift & SwiftUI) avec Xcode.",
+				"Parcours Extended (4 semaines en distanciel) : Approfondissement des compétences acquises lors du premier programme pour concevoir des applications iOS plus complexes et abouties.",
+				"Présentation finale d'une application fonctionnelle devant un jury."
+			]
+		},
+		{
+			"institution": "Diversidays & Google AI Opportunity (DISTANCIEL)",
+			"url": "https://www.coursera.org/account/accomplishments/verify/KPM6F1VF7E3W",
+			"area": "Google AI Essentials",
+			"startDate": "2025-06-24",
+			"endDate": "2025-07-08",
+			"courses": [
+				"Concepts fondamentaux de l'IA et du Machine Learning.",
+				"Rédaction de prompts efficaces.",
+				"Optimisation de la productivité grâce à l'intégration des outils adaptés.",
+				"Utilisation responsable de l'IA:",
+				"(éthique, biais, sécurité des données)"
+			]
+		},
+		{
+			"institution": "OpenClassrooms (DISTANCIEL)",
+			"url": "https://openclassrooms.com/fr/paths/717-developpeur-web",
+			"area": "Développeur Web",
+			"startDate": "2022-12-21",
+			"endDate": "2023-08-21",
+			"courses": [
+				"Certification Professionnelle Niveau 5.",
+				"Développement d'interfaces web dynamiques.",
+				"Mise en place de la sécurité.",
+				"Intégration de tests pour les fonctionnalités développées.",
+				"Optimisation des performances.",
+				"Respect du traitement des données personnelles.",
+				"De l’accessibilité web, du SEO, du Green IT.",
+				"Mise en œuvre de l'intégration continu."
+			]
+		},
+		{
+			"institution": "OpenClassrooms (DISTANCIEL)",
+			"url": "https://openclassrooms.com/fr/paths/179-prepfullstack",
+			"area": "Prép' FullStack",
+			"startDate": "2019-11-01",
+			"endDate": "2020-02-01",
+			"courses": [
+				"Certification Professionnelle.",
+				"Création de structure d’une page HTML5/CSS3.",
+				"Création de site vitrine avec WordPress.",
+				"Réalisation d'un projet web dynamique avec le langages PHP.",
+				"Modélisation de bases de données MYSQL."
+			]
+		},
+		{
+			"institution": "Ecole 42 de PARIS",
+			"url": "http://www.42.fr/",
+			"area": "Architecte en Technologie du Numérique",
+			"startDate": "2014-09-01",
+			"endDate": "2017-06-01",
+			"courses": [
+				"Level: 10",
+				"Piscine C validée.",
+				"Création d'une Librairie C avec + de 50 Fonctions dont Printf.",
+				"Utilisation de cette dernière pour 'recoder' le programme LS.",
+				"Piscine PHP validée.",
+				"Conception de sites internet: ",
+				"E-commerce, Instagram-like, Meetic-like."
+			]
+		},
+		{
+			"institution": "Centre Actif de VALENCIENNES(59)",
+			"area": "Agent d’Intervention en Matériels Informatiques",
+			"startDate": "2004-09-01",
+			"endDate": "2005-06-01",
+			"courses": [
+				"Diplôme: BEP",
+				"Intégration, paramétrage, maintenance de micro-ordinateurs, serveurs, périphériques & composants",
+				"Installation, configuration, administration de logiciels, OS, réseaux (WAN/LAN/Wifi).",
+				"Diagnostic et méthodologie de résolution de pannes."
+			]
+		},
+		{
+			"institution": "CodinGame (DISTANCIEL)",
+			"url": "https://www.codingame.com/profile/6468f1acd7f4253174b419ed67e9dfd8540088",
+			"startDate": "2014-09-01",
+			"endDate": "Aujourd'hui",
+			"courses": ["Level: 8"]
+		}
+	],
+	"skills": [
+		{
+			"name": "Soft Skills",
+			"keywords": [
+				"Autonomie",
+				"Collaboration",
+				"Apprentissage",
+				"Patience",
+				"Rigueur",
+				"Créativité"
+			]
+		},
+		{
+			"name": "Languages",
+			"keywords": [
+				"Bash",
+				"C",
+				"HTML5",
+				"CSS3",
+				"PHP8",
+				"JavaScript",
+				"Python",
+				"Swift"
+			]
+		},
+		{
+			"name": "Databases",
+			"keywords": [
+				"MySQL",
+				"MariaDB",
+				"MongoDB"
+			]
+		},
+		{
+			"name": "Frameworks, Librairies & CMS...",
+			"keywords": [
+				"Symfony",
+				"Express",
+				"React",
+				"WordPress",
+				"BootStrap",
+				"NodeJS"
+			]
+		},
+		{
+			"name": "Softwares",
+			"keywords": [
+				"VirtualBox",
+				"Docker",
+				"Apache2",
+				"VS-Code",
+				"Xcode",
+				"Git",
+				"NodeRed"
+			]
+		},
+		{
+			"name": "API",
+			"keywords": [
+				"GitHub",
+				"OpenAi",
+				"Google Gemini",
+				"OpenWeather",
+				"Arenanet"
+			]
+		},
+		{
+			"name": "Hardware",
+			"keywords": [
+				"- Intégration, paramétrage, maintenance de micro-ordinateur, serveurs, périphériques & composants.",
+				"- Installation, configuration, administration de logiciels, OS & réseaux."
+			]
+		},
+		{
+			"name": "Divers",
+			"keywords": [
+				"- Permis B"
+			]
+		}
+	],
+	"languages": [
+		{
+			"language": "Anglais",
+			"fluency": "Technique"
+		}
+	],
+	"interests": [
+		{
+			"name": "Nouvelles Technologies",
+			"keywords": [
+				"IA",
+				"Domotique",
+				"Multimédia"
+			]
+		},
+		{
+			"name": "Jeux Vidéos",
+			"keywords": [
+				"2048",
+				"Guild Wars 2 (Level 80)",
+				"Tekken"
+			]
+		},
+		{
+			"name": "Musiques",
+			"keywords": [
+				"Reggae",
+				"Electro",
+				"Rap"
+			]
+		},
+		{
+			"name": "Vidéos",
+			"keywords": [
+				"Cinéma",
+				"Séries",
+				"Documentaires"
+			]
+		},
+		{
+			"name": "Sports",
+			"keywords": [
+				"Course à pied",
+				"Randonnée"
+			]
+		}
+	],
+	"references": [
+		{
+			"name": "Erlich Bachman",
+			"reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+		}
+	],
+	"projects": [
+	{
+		"id":		"16d18222",
+		"category":	"Fullstack",
+		"name":		"Portfolio & CV",
+		"description":	"Le projet numéro 08 de la formation Openclassrooms consiste à créer son propre portfolio. Dans ce cadre, j’ai récupéré les informations de mon profil Github ainsi que depuis mon fichier Resume.json, et je les ai affichées correctement. Les difficultés rencontrées lors de ce projet ont été l’organisation des données, la prise en main de React & de GitHub Page. Pour y remédier, j’ai choisi le standard JSON Resume, suivi et revu les cours OpenClassrooms, consulté la documentation et certaines ressources sur internet. Finalement, j’ai fusionné mon CV en ligne avec le projet de sorte qu’en modifiant uniquement mon fichier Resume.json, tout se met à jour automatiquement.",
+		"highlights":	[
+			"Mise en pratique de la formation de Développeur Web d'OpenClassrooms",
+			"Utilisation de l'API de GitHub",
+			"Organisation de la data en suivant le standard JSON Resume"
+		],
+		"cover":	"/img/Projets/Portfolio/cover.webp",
+		"pictures":	[
+			"/img/Projets/Portfolio/screen1.webp",
+			"/img/Projets/Portfolio/screen2.webp"
+		],
+		"keywords":	[
+			"React",
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"Git",
+			"GitHubAPI",
+			"JSON",
+			"Markdown"
+		],
+		"startDate":	"2023-07-21",
+		"endDate":	"2023-08-21",
+		"url":		"https://flourdau.github.io/",
+		"depot":	"https://github.com/flourdau/flourdau",
+		"roles":	[
+			"Team lead",
+			"Designer"
+		],
+		"type":		"Vitrine"
+	},
+	{
+		"id":		"36d188m8",
+		"category":	"WordPress",
+		"name":		"Blog",
+		"description":	"Création de mon blog avec le CMS WordPress. La principale difficulté rencontrée lors de ce projet a été le déploiement et l’optimisation. Pour surmonter ces défis, j’ai suivi les procédures de mon hébergeur, ainsi que les cours disponibles sur OpenClassrooms ainsi que sur Internet. Ayant choisi un CMS très utilisé, j’ai pu bénéficier de nombreuses ressources pour l’installation, le paramétrage et l’optimisation.",
+		"highlights":	[
+			"Mise en pratique de la formation de Développeur Web d'OpenClassrooms",
+			"Déploiement d'un WordPress",
+			"Administration d'une base de données MariaDB"
+		],
+		"cover":	"/img/Projets/Blog/cover.webp",
+		"pictures":	[
+			"/img/Projets/Blog/screen1.webp",
+			"/img/Projets/Blog/screen2.webp"
+		],
+		"keywords":	[
+			"WordPress",
+			"MariaDB",
+			"HTML5",
+			"CSS3"
+		],
+		"startDate":	"2019-07-28",
+		"endDate":	"2023-08-21",
+		"url":		"https://blog.positive-link.net/",
+		"depot":	"https://blog.positive-link.net/",
+		"roles":	[
+			"Team lead",
+			"Designer"
+		],
+		"type":		"WordPress"
+	},
+	{
+		"id":		"46d188m8",
+		"category":	"Tutoriel",
+		"name":		"myVirtualEnv",
+		"description":	"Création d’une fiche de procédure en ligne (site statique) pour créer une machine virtuelle Debian avec VirtualBox. Ce projet n’a pas présenté de difficulté majeure, à part peut-être le contenu de la procédure elle-même. En effet, ce projet met en avant la création d’un environnement de développement avec Debian. J’ai choisi le langage Markdown pour une meilleure lisibilité sur GitHub, et j’ai également utilisé GitHub Pages pour améliorer la mise en page.",
+		"highlights":	[
+			"Création d'une fiche de procédure détaillée",
+			"Déploiement avec VirtualBox",
+			"Paramétrage d'un evironnement de développement axé web"
+		],
+		"cover":	"/img/Projets/VirtualServer/cover.webp",
+		"pictures":	[
+			"/img/Projets/VirtualServer/screen1.webp",
+			"/img/Projets/VirtualServer/screen2.webp",
+			"/img/Projets/VirtualServer/screen3.webp"
+		],
+		"keywords":	[
+			"Markdown",
+			"GitHubPage",
+			"VirtualBox",
+			"Debian"
+		],
+		"startDate":	"2019-07-28",
+		"endDate":	"2023-08-21",
+		"url":		"https://flourdau.github.io/myVirtualEnv",
+		"depot":	"https://github.com/flourdau/myVirtualEnv",
+		"roles":	[
+			"Team lead",
+			"Designer"
+		],
+		"type":		"Tutoriel"
+	},
+	{
+		"id":		"57d188m8",
+		"category":	"Extranet",
+		"name":		"GBAF",
+		"description":	"Vous êtes développeur dans un grand groupe bancaire: le Groupement Banque-Assurance Français (GBAF). Vous devez réaliser un intranet pour créer, commenter, noter les acteurs du groupe. La principale difficulté rencontrée lors de ce projet a été de ne pas utiliser de framework ni de librairies, et de tout reconstruire à partir de ‘zéro’ en PHP. Mon objectif était de bien comprendre les bases de ce langage. Pour ce faire, j’ai utilisé la documentation, suivi des cours et utilisé des ressources disponibles sur Internet concernant ce langage très utilisé pour le web.",
+		"highlights":	[
+			"Coder la structure d’une page web en HTML5.",
+			"Mettre en page et en forme en utilisant le CSS.",
+			"Modéliser une base de données.",
+			"Se connecter à une base de données.",
+			"Recueillir la saisie des données utilisateur en langage PHP.",
+			"Gérer les informations dans la base de données en langage SQL."
+		],
+		"cover":	"/img/Projets/GBAF/cover.webp",
+		"pictures":	[
+			"/img/Projets/GBAF/screen1.webp",
+			"/img/Projets/GBAF/screen2.webp",
+			"/img/Projets/GBAF/screen3.webp",
+			"/img/Projets/GBAF/screen4.webp"
+		],
+		"keywords":	[
+			"PHP8",
+			"MariaDB",
+			"HTML5",
+			"CSS3"
+		],
+		"startDate":	"2019-07-28",
+		"endDate":	"2023-08-21",
+		"urlRepoGit":	"A CREER",
+		"urlProjet":	"https://openclassrooms.com/fr/paths/179/projects/674/assignment",
+		"url":		"https://oc-projet03.positive-link.net/",
+		"depot":	"https://github.com/flourdau/OC_Projet03-1",
+		"roles":	[
+			"Team lead",
+			"Designer"
+		],
+		"type":		"Extranet"
+	},
+	{
+		"id":		"67d188m8",
+		"category":	"Vitrine",
+		"name":		"Robbie Lens",
+		"description":	"Site vitrine pour une photographe. Les principales difficultés rencontrées lors de ce projet ont été liées à l’utilisation des ‘Grid’ (CSS), que je n’avais pas encore utilisées auparavant. Cela a été une excellente occasion pour moi d’apprendre et de maîtriser cette nouvelle compétence.",
+		"highlights":	[
+			"Coder la structure d’une page web en HTML5.",
+			"Mettre en page et en forme en utilisant le CSS."
+		],
+		"cover":	"/img/Projets/RobbieLens/cover.webp",
+		"pictures":	[
+			"/img/Projets/RobbieLens/screen1.webp",
+			"/img/Projets/RobbieLens/screen2.webp",
+			"/img/Projets/RobbieLens/screen3.webp",
+			"/img/Projets/RobbieLens/screen4.webp",
+			"/img/Projets/RobbieLens/screen5.webp",
+			"/img/Projets/RobbieLens/screen6.webp"
+		],
+		"keywords":	[
+			"HTML5",
+			"CSS3"
+		],
+		"startDate":	"2019-07-28",
+		"endDate":	"2023-08-21",
+		"urlRepoGit":	"https://github.com/flourdau/OC_HTML-CSS",
+		"urlProjet":	"https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3",
+		"url":		"https://photo-model.positive-link.net/",
+		"depot":	"https://github.com/flourdau/OC_HTML-CSS",
+		"roles":	[
+			"Team lead",
+			"Designer"
+		],
+		"type":		"Vitrine"
+	},
+	{
+		"id":		"777788m8",
+		"category":	"Vitrine",
+		"name":		"Booki",
+		"description":	"Créez la page d'accueil d'une agence de voyage avec HTML & CSS. Pour ce projet la difficulté rencontrée été la découverte de Figma une application web pour la création de maquette.",
+		"highlights":	[
+			"Implémenter une interface responsive avec HTML et CSS",
+			"Versionner son projet avec Git et Github",
+			"Intégrer du contenu conformément à une maquette avec HTML et CSS",
+			"Installer un environnement de développement front-end"
+		],
+		"cover":	"/img/Projets/Booki/cover.webp",
+		"pictures":	[
+			"/img/Projets/Booki/screen1.webp",
+			"/img/Projets/Booki/screen2.webp",
+			"/img/Projets/Booki/screen3.webp"
+		],
+		"keywords":	[
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"Git",
+			"GitHub"
+		],
+		"startDate":	"2021-01-28",
+		"endDate":	"2023-02-16",
+		"urlRepoGit":	"https://github.com/flourdau/OC_projet02",
+		"urlProjet":	"https://openclassrooms.com/fr/paths/717/projects/1332/assignment",
+		"url":		"https://booki.positive-link.net",
+		"depot":	"https://github.com/flourdau/OC_Projet02",
+		"roles":	[
+			"Team lead",
+			"Designer"
+		],
+		"type":		"Vitrine"
+	},
+	{
+		"id":		"87778899",
+		"category":	"Application",
+		"name":		"Kasa",
+		"description":	"Créez une application web de location immobilière avec React. La principale difficulté rencontrée lors de ce projet a été la découverte de React. Cependant, en suivant les ressources disponibles sur le web, les cours d’OpenClassrooms et la documentation, j’ai pu surmonter ces défis et valider le projet.",
+		"highlights":	[
+			"Initialisez une application avec Create React App",
+			"Configurez la navigation entre les pages de l'application avec React Router",
+			"Développez des éléments de l'interface d'un site web grâce à des composants React"
+		],
+		"cover":	"/img/Projets/Kasa/cover.webp",
+		"pictures":	[
+			"/img/Projets/Kasa/screen1.webp",
+			"/img/Projets/Kasa/screen2.webp",
+			"/img/Projets/Kasa/screen3.webp"
+		],
+		"keywords":	[
+			"React",
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"Git",
+			"GitHub"
+		],
+		"startDate":	"2019-07-28",
+		"endDate":	"2023-08-21",
+		"urlRepoGit":	"https://github.com/flourdau/OC_projet06",
+		"urlProjet":	"https://openclassrooms.com/fr/paths/717/projects/1247/assignment",
+		"url":		false,
+		"depot":	"https://github.com/flourdau/OC_Projet06",
+		"roles":	[
+			"Team lead",
+			"Designer"
+		],
+		"type":	"Application"
+	}],
+	"personal": [
+		{
+			"name":		"Autour des Raspberry Pi :",
+			"description":	[
+				"Interfaces Météo/Transports/Domotique",
+				"Point d'access Wifi",
+				"Serveurs Web/Multimédia"
+			]
+		},
+		{
+			"name":		"Création & Administration du site:",
+			"description":	[
+				"positive-link.net"
+			]
+		}
+	],
+	"meta":	{
+		"title":	"🌍 Hello World!",
+		"content":	"Bonjour & bienvenue sur mon Portfolio! \nJe suis Florian Lourdaux.",
+		"pictures":	[
+			"/img/Body/Carousel/circuitImp.webp",
+			"/img/Body/Carousel/sonic.webp",
+			"/img/Body/Carousel/circuitImp2.webp",
+			"/img/Body/Carousel/42.webp",
+			"/img/Body/Carousel/clavier.webp",
+			"/img/Body/Carousel/cables.webp",
+			"/img/Body/Carousel/memory.webp"
+		],
+		"canonical":	"https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+		"version":	"v1.0.0",
+		"lastModified":	"2026-11-09T20:00:00"
+	}
+}
